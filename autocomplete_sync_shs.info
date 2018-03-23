@@ -3,4 +3,4 @@ description = Module which provides autocomplete field to select shs value
 core = 7.x
 dependencies = synonyms_provider_field
 dependencies = shs
-stylesheets[all][] = css/autocomplete_sync_shs.css
+stylesheets[all][] = autocomplete_sync_shs.css
