@@ -103,7 +103,7 @@ function autocomplete_sync_shs_form_alter(&$form,&$form_state,$form_id){
     }
     $shs_select = variable_get('autocomplete_sync_shs_select_classes','col-lg-12');
     drupal_add_js(array('autocomplete_sync_shs' => array('shs_select' => $shs_select,'field_name'=>$field_name)), array('type' => 'setting'));
-    $form['#attached']['js'][] = drupal_get_path('module','autocomplete_sync_shs').'/js/shs_bootstrap.js' ;
+    $form['#attached']['js'][] = drupal_get_path('module','autocomplete_sync_shs').'/shs_bootstrap.js' ;
     $form['#validate'][] = 'autocomplete_sync_shs_autocomplete_shs_validate';
     $form['#submit'][] = 'autocomplete_sync_shs_autocomplete_sync_shs_submit';
    }
